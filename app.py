@@ -1,7 +1,7 @@
-def myfunc():
-  global x
-  x = "fantastic"
+from flask import Flask
 
-myfunc()
+app = Flask(_name_)
 
-print("Python is " + x) 
+@app.route("/")
+def hello_world():
+    return "<p>Hello, World!</p>"
